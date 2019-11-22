@@ -1,7 +1,11 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.852
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Smoke Calculator Basic", "Smoke Calculator Basic.vbproj", "{02061564-5147-4105-BA5F-8DA1A72A6BF0}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup1", "..\Setup1\Setup1.vdproj", "{BA16192A-42F8-4EBB-BC73-5C04EF081C26}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,8 +17,13 @@ Global
 		{02061564-5147-4105-BA5F-8DA1A72A6BF0}.Debug|x86.Build.0 = Debug|x86
 		{02061564-5147-4105-BA5F-8DA1A72A6BF0}.Release|x86.ActiveCfg = Release|x86
 		{02061564-5147-4105-BA5F-8DA1A72A6BF0}.Release|x86.Build.0 = Release|x86
+		{BA16192A-42F8-4EBB-BC73-5C04EF081C26}.Debug|x86.ActiveCfg = Debug
+		{BA16192A-42F8-4EBB-BC73-5C04EF081C26}.Release|x86.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {239DB0CC-E3B7-4CE0-BB81-A16B7F9A5B5B}
 	EndGlobalSection
 EndGlobal
