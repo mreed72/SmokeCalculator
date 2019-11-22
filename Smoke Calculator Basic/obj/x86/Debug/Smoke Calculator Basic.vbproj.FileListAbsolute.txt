@@ -1,0 +1,9 @@
+C:\GITHUB REPOS\Smoke Calculator\SmokeCalculator\Smoke Calculator Basic\bin\Debug\Smoke Calculator Basic.exe
+C:\GITHUB REPOS\Smoke Calculator\SmokeCalculator\Smoke Calculator Basic\bin\Debug\Smoke Calculator Basic.pdb
+C:\GITHUB REPOS\Smoke Calculator\SmokeCalculator\Smoke Calculator Basic\bin\Debug\Smoke Calculator Basic.xml
+C:\GITHUB REPOS\Smoke Calculator\SmokeCalculator\Smoke Calculator Basic\obj\x86\Debug\Smoke_Calculator_Basic.Form1.resources
+C:\GITHUB REPOS\Smoke Calculator\SmokeCalculator\Smoke Calculator Basic\obj\x86\Debug\Smoke_Calculator_Basic.Resources.resources
+C:\GITHUB REPOS\Smoke Calculator\SmokeCalculator\Smoke Calculator Basic\obj\x86\Debug\Smoke Calculator Basic.vbproj.GenerateResource.Cache
+C:\GITHUB REPOS\Smoke Calculator\SmokeCalculator\Smoke Calculator Basic\obj\x86\Debug\Smoke Calculator Basic.exe
+C:\GITHUB REPOS\Smoke Calculator\SmokeCalculator\Smoke Calculator Basic\obj\x86\Debug\Smoke Calculator Basic.xml
+C:\GITHUB REPOS\Smoke Calculator\SmokeCalculator\Smoke Calculator Basic\obj\x86\Debug\Smoke Calculator Basic.pdb
