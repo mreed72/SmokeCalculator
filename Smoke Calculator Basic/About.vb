@@ -12,7 +12,7 @@
 
         Label1.Text = "v" & My.Application.Info.Version.ToString
         Label2.Text = My.Application.Info.ProductName.ToString
-        Label3.Text = "FREEWARE"
+        Label3.Text = "© 2019 SimonCoder Software Design"
 
     End Sub
 
