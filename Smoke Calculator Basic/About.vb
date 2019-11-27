@@ -14,6 +14,12 @@
         Label2.Text = My.Application.Info.ProductName.ToString
         Label3.Text = "© 2019 SimonCoder Software Design"
 
+          Dim slog As String = My.Computer.FileSystem.SpecialDirectories.Desktop & "\SmokeLog.txt"
+          Dim cnts As String
+          cnts = My.Computer.FileSystem.ReadAllText(slog)
+
+          RichTextBox1.Text = cnts
+
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click

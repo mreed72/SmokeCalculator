@@ -232,6 +232,13 @@ Public Class xFuels
           End Select
      End Function
 
+     Function LogIt(msg As String)
+          Dim floc As String = My.Computer.FileSystem.SpecialDirectories.Desktop & "\SmokeLog.txt"
+          Dim file As System.IO.StreamWriter
+          file = My.Computer.FileSystem.OpenTextFileWriter(floc, True)
+          file.WriteLine(Date.Now & vbNewLine & msg & vbNewLine)
+          file.Close()
+     End Function
 
 
 End Class

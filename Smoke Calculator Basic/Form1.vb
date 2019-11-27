@@ -32,7 +32,7 @@ Public Class Form1
             txBurnSize.BackColor = Color.Yellow
             Return False
         Else
-            txBurnSize.BackColor = DefaultBackColor
+               txBurnSize.BackColor = Color.White
             Return True
         End If
 
@@ -40,7 +40,7 @@ Public Class Form1
             txCatDay.BackColor = Color.Yellow
             Return False
         Else
-            txCatDay.BackColor = DefaultBackColor
+               txCatDay.BackColor = Color.White
             Return True
         End If
 
@@ -48,7 +48,7 @@ Public Class Form1
             txDistance.BackColor = Color.Yellow
             Return False
         Else
-            txDistance.BackColor = DefaultBackColor
+               txDistance.BackColor = Color.White
             Return True
         End If
 
@@ -56,7 +56,7 @@ Public Class Form1
             txFtype.BackColor = Color.Yellow
             Return False
         Else
-            txFtype.BackColor = DefaultBackColor
+               txFtype.BackColor = Color.White
             Return True
         End If
 
@@ -64,7 +64,7 @@ Public Class Form1
             txFload.BackColor = Color.Yellow
             Return False
         Else
-            txFload.BackColor = DefaultBackColor
+               txFload.BackColor = Color.White
             Return True
         End If
 
@@ -85,15 +85,36 @@ Public Class Form1
                 If Val(txTotalTons.Text) >= Val(txAllowed.Text) Then
                     Dim snew As Integer = txAllowed.Text \ txAvFuels.Text - 5
                     txRecommend.Text = "New Burn Size: " & snew & " acres."
-                    txResults.Text = "Burn Will Exceed the Guidelines."
+                         txResults.Text = "Burn Will Exceed the Guidelines."
+                         txResults.BackColor = Color.LightPink
                 Else
                     txRecommend.Clear()
-                    txResults.Text = "Burn is Good."
+                         txResults.Text = "Burn is Good."
+                         txResults.BackColor = Color.White
                 End If
             Catch ex As Exception
-            End Try
-
+               End Try
         End If
+
+          Dim bs, cd As Integer
+          Dim td As Double
+          Dim ft, fl As String
+          Dim res, rec As String
+
+          bs = txBurnSize.Text
+          cd = txCatDay.Text
+          td = txDistance.Text
+          ft = txFtype.SelectedItem
+          fl = txFload.SelectedItem
+          res = txResults.Text
+          rec = txRecommend.Text
+
+          x.LogIt("Burn Size: " & bs & vbNewLine & "Category Day: " & cd & vbNewLine & "Target Distance: " & td & vbNewLine & "Fuel Type: " & ft _
+                 & vbNewLine & "Fuel Load: " & fl & vbNewLine & "Results: " & res & vbNewLine & "Recommended: " & rec)
+
+
+
+
 
     End Sub
 
@@ -102,7 +123,7 @@ Public Class Form1
             If txCatDay.Text < 1 Or txCatDay.Text > 5 Then
                 txCatDay.BackColor = Color.Yellow
             Else
-                txCatDay.BackColor = DefaultBackColor
+                    txCatDay.BackColor = Color.White
             End If
         Catch ex As Exception
 
@@ -114,4 +135,9 @@ Public Class Form1
 
     End Sub
 
+     Private Sub Form1_FormClosing(sender As System.Object, e As System.Windows.Forms.FormClosingEventArgs) Handles MyBase.FormClosing
+          Dim fx As String = My.Computer.FileSystem.SpecialDirectories.Desktop & "\SmokeLog.txt"
+          My.Computer.FileSystem.DeleteFile(fx, FileIO.UIOption.OnlyErrorDialogs, FileIO.RecycleOption.DeletePermanently)
+
+     End Sub
 End Class
