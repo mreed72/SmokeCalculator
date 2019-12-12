@@ -49,6 +49,7 @@ Partial Class frmSingle
           Me.btnCalc = New System.Windows.Forms.Button()
           Me.PictureBox1 = New System.Windows.Forms.PictureBox()
           Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+          Me.Label9 = New System.Windows.Forms.Label()
           Me.TableLayoutPanel1.SuspendLayout()
           Me.TableLayoutPanel2.SuspendLayout()
           Me.TableLayoutPanel3.SuspendLayout()
@@ -69,10 +70,11 @@ Partial Class frmSingle
           Me.TableLayoutPanel1.Controls.Add(Me.txDistance, 1, 2)
           Me.TableLayoutPanel1.Location = New System.Drawing.Point(222, 12)
           Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
-          Me.TableLayoutPanel1.RowCount = 3
+          Me.TableLayoutPanel1.RowCount = 4
           Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle())
           Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle())
           Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle())
+          Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
           Me.TableLayoutPanel1.Size = New System.Drawing.Size(199, 93)
           Me.TableLayoutPanel1.TabIndex = 0
           '
@@ -121,7 +123,7 @@ Partial Class frmSingle
           Me.Label3.Anchor = System.Windows.Forms.AnchorStyles.Right
           Me.Label3.AutoSize = True
           Me.Label3.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-          Me.Label3.Location = New System.Drawing.Point(5, 68)
+          Me.Label3.Location = New System.Drawing.Point(5, 67)
           Me.Label3.Name = "Label3"
           Me.Label3.Size = New System.Drawing.Size(113, 17)
           Me.Label3.TabIndex = 5
@@ -321,11 +323,23 @@ Partial Class frmSingle
           'Timer1
           '
           '
+          'Label9
+          '
+          Me.Label9.AutoSize = True
+          Me.Label9.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+          Me.Label9.ForeColor = System.Drawing.SystemColors.AppWorkspace
+          Me.Label9.Location = New System.Drawing.Point(0, 261)
+          Me.Label9.Name = "Label9"
+          Me.Label9.Size = New System.Drawing.Size(14, 16)
+          Me.Label9.TabIndex = 7
+          Me.Label9.Text = "0"
+          '
           'frmSingle
           '
           Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
           Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
           Me.ClientSize = New System.Drawing.Size(616, 275)
+          Me.Controls.Add(Me.Label9)
           Me.Controls.Add(Me.btnClear)
           Me.Controls.Add(Me.btnCalc)
           Me.Controls.Add(Me.txRec)
@@ -375,4 +389,5 @@ Partial Class frmSingle
      Friend WithEvents btnCalc As System.Windows.Forms.Button
      Friend WithEvents btnClear As System.Windows.Forms.Button
      Friend WithEvents Timer1 As System.Windows.Forms.Timer
+     Friend WithEvents Label9 As System.Windows.Forms.Label
 End Class

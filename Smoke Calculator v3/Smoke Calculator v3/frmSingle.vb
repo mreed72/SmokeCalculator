@@ -3,6 +3,7 @@
      Dim sTime As String
      Dim sNEW As Integer
      Private CompTime As System.Int32
+     Dim steps As Integer = 0
 
      Private Sub frmSingle_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
           'LOAD
@@ -13,6 +14,8 @@
           Catch ex As Exception
                x.ErrorLog("2X5N9QA", ex.Message)
           End Try
+          btnCalc.Enabled = False
+
      End Sub
 
      Private Sub btnClear_Click(sender As System.Object, e As System.EventArgs) Handles btnClear.Click
@@ -31,6 +34,9 @@
                txRec.BackColor = Color.White
                txResults.BackColor = Color.White
                sNEW = 0
+               steps = 0
+               btnCalc.Enabled = False
+
           Catch ex As Exception
                x.ErrorLog("2XXLK6G", ex.Message)
           End Try
@@ -157,4 +163,65 @@
 
 
 
+     Private Sub txBurnSize_Leave(sender As System.Object, e As System.EventArgs) Handles txBurnSize.Leave
+          Try
+               If txBurnSize.Text > String.Empty Then
+                    steps += 1
+               End If
+          Catch ex As Exception
+
+          End Try
+          Label9.Text = steps
+     End Sub
+
+     Private Sub txCatDay_Leave(sender As System.Object, e As System.EventArgs) Handles txCatDay.Leave
+          Try
+               If txCatDay.Text > String.Empty Then
+                    steps += 1
+               End If
+          Catch ex As Exception
+
+          End Try
+          Label9.Text = steps
+     End Sub
+
+     Private Sub txDistance_Leave(sender As System.Object, e As System.EventArgs) Handles txDistance.Leave
+          Try
+               If txDistance.Text > String.Empty Then
+                    steps += 1
+               End If
+          Catch ex As Exception
+
+          End Try
+          Label9.Text = steps
+     End Sub
+
+     Private Sub txFtype_Leave(sender As System.Object, e As System.EventArgs) Handles txFtype.Leave
+          Try
+               If txFtype.SelectedIndex > -1 Then
+                    steps += 1
+               End If
+          Catch ex As Exception
+
+          End Try
+          Label9.Text = steps
+     End Sub
+
+     Private Sub txFload_Leave(sender As System.Object, e As System.EventArgs) Handles txFload.Leave
+          Try
+               If txFload.SelectedIndex > -1 Then
+                    steps += 1
+               End If
+          Catch ex As Exception
+
+          End Try
+          Label9.Text = steps
+     End Sub
+
+     Private Sub Label9_TextChanged(sender As System.Object, e As System.EventArgs) Handles Label9.TextChanged
+          If steps = 5 Then
+               btnCalc.Enabled = True
+               steps = 0
+          End If
+     End Sub
 End Class
