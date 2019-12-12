@@ -1,0 +1,21 @@
+C:\Users\mreed\AppData\Local\Temporary Projects\Smoke Calculator v3\bin\Debug\Smoke Calculator v3.exe
+C:\Users\mreed\AppData\Local\Temporary Projects\Smoke Calculator v3\bin\Debug\Smoke Calculator v3.pdb
+C:\Users\mreed\AppData\Local\Temporary Projects\Smoke Calculator v3\bin\Debug\Smoke Calculator v3.xml
+C:\Users\mreed\AppData\Local\Temporary Projects\Smoke Calculator v3\obj\x86\Debug\Smoke_Calculator_v3.Form1.resources
+C:\Users\mreed\AppData\Local\Temporary Projects\Smoke Calculator v3\obj\x86\Debug\Smoke_Calculator_v3.Resources.resources
+C:\Users\mreed\AppData\Local\Temporary Projects\Smoke Calculator v3\obj\x86\Debug\Smoke Calculator v3.vbproj.GenerateResource.Cache
+C:\Users\mreed\AppData\Local\Temporary Projects\Smoke Calculator v3\obj\x86\Debug\Smoke Calculator v3.exe
+C:\Users\mreed\AppData\Local\Temporary Projects\Smoke Calculator v3\obj\x86\Debug\Smoke Calculator v3.xml
+C:\Users\mreed\AppData\Local\Temporary Projects\Smoke Calculator v3\obj\x86\Debug\Smoke Calculator v3.pdb
+E:\VS PROJECTS\Smoke Calculator v3\Smoke Calculator v3\obj\x86\Debug\Smoke Calculator v3.exe
+E:\VS PROJECTS\Smoke Calculator v3\Smoke Calculator v3\obj\x86\Debug\Smoke Calculator v3.xml
+E:\VS PROJECTS\Smoke Calculator v3\Smoke Calculator v3\obj\x86\Debug\Smoke Calculator v3.pdb
+E:\VS PROJECTS\Smoke Calculator v3\Smoke Calculator v3\bin\Debug\Smoke Calculator v3.exe
+E:\VS PROJECTS\Smoke Calculator v3\Smoke Calculator v3\bin\Debug\Smoke Calculator v3.pdb
+E:\VS PROJECTS\Smoke Calculator v3\Smoke Calculator v3\bin\Debug\Smoke Calculator v3.xml
+E:\VS PROJECTS\Smoke Calculator v3\Smoke Calculator v3\obj\x86\Debug\Smoke_Calculator_v3.Form1.resources
+E:\VS PROJECTS\Smoke Calculator v3\Smoke Calculator v3\obj\x86\Debug\Smoke_Calculator_v3.Resources.resources
+E:\VS PROJECTS\Smoke Calculator v3\Smoke Calculator v3\obj\x86\Debug\Smoke Calculator v3.vbproj.GenerateResource.Cache
+E:\VS PROJECTS\Smoke Calculator v3\Smoke Calculator v3\obj\x86\Debug\Smoke_Calculator_v3.frmMultiple.resources
+E:\VS PROJECTS\Smoke Calculator v3\Smoke Calculator v3\obj\x86\Debug\Smoke_Calculator_v3.frmSingle.resources
+E:\VS PROJECTS\Smoke Calculator v3\Smoke Calculator v3\obj\x86\Debug\Smoke_Calculator_v3.frmLogViewer.resources
