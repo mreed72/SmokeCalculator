@@ -31,3 +31,4 @@ C:\GITHUB REPOS\Smoke Calculator\SmokeCalculator\Smoke Calculator v3\Smoke Calcu
 C:\GITHUB REPOS\Smoke Calculator\SmokeCalculator\Smoke Calculator v3\Smoke Calculator v3\obj\x86\Debug\Smoke_Calculator_v3.frmSingle.resources
 C:\GITHUB REPOS\Smoke Calculator\SmokeCalculator\Smoke Calculator v3\Smoke Calculator v3\obj\x86\Debug\Smoke_Calculator_v3.Resources.resources
 C:\GITHUB REPOS\Smoke Calculator\SmokeCalculator\Smoke Calculator v3\Smoke Calculator v3\obj\x86\Debug\Smoke Calculator v3.vbproj.GenerateResource.Cache
+C:\GITHUB REPOS\Smoke Calculator\SmokeCalculator\Smoke Calculator v3\Smoke Calculator v3\obj\x86\Debug\Smoke_Calculator_v3.frmAbout.resources

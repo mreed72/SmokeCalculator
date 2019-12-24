@@ -22,15 +22,17 @@ Partial Class frmLogViewer
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+          Me.components = New System.ComponentModel.Container()
           Me.rtb = New System.Windows.Forms.RichTextBox()
           Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
-          Me.Button6 = New System.Windows.Forms.Button()
-          Me.Button4 = New System.Windows.Forms.Button()
           Me.Button1 = New System.Windows.Forms.Button()
           Me.Button2 = New System.Windows.Forms.Button()
           Me.Button3 = New System.Windows.Forms.Button()
           Me.Button5 = New System.Windows.Forms.Button()
+          Me.Button6 = New System.Windows.Forms.Button()
+          Me.Button4 = New System.Windows.Forms.Button()
           Me.bLogName = New System.Windows.Forms.Label()
+          Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
           Me.TableLayoutPanel1.SuspendLayout()
           Me.SuspendLayout()
           '
@@ -63,24 +65,6 @@ Partial Class frmLogViewer
           Me.TableLayoutPanel1.Size = New System.Drawing.Size(358, 65)
           Me.TableLayoutPanel1.TabIndex = 1
           '
-          'Button6
-          '
-          Me.Button6.Image = Global.Smoke_Calculator_v3.My.Resources.Resources.weIMAGE086
-          Me.Button6.Location = New System.Drawing.Point(460, 12)
-          Me.Button6.Name = "Button6"
-          Me.Button6.Size = New System.Drawing.Size(75, 79)
-          Me.Button6.TabIndex = 3
-          Me.Button6.UseVisualStyleBackColor = True
-          '
-          'Button4
-          '
-          Me.Button4.Image = Global.Smoke_Calculator_v3.My.Resources.Resources.p24_00079
-          Me.Button4.Location = New System.Drawing.Point(376, 17)
-          Me.Button4.Name = "Button4"
-          Me.Button4.Size = New System.Drawing.Size(32, 23)
-          Me.Button4.TabIndex = 2
-          Me.Button4.UseVisualStyleBackColor = True
-          '
           'Button1
           '
           Me.Button1.Image = Global.Smoke_Calculator_v3.My.Resources.Resources.p16_00188
@@ -90,6 +74,7 @@ Partial Class frmLogViewer
           Me.Button1.Size = New System.Drawing.Size(110, 23)
           Me.Button1.TabIndex = 0
           Me.Button1.Text = "Single Log"
+          Me.ToolTip1.SetToolTip(Me.Button1, "Single Fuels Calculator Log Files")
           Me.Button1.UseVisualStyleBackColor = True
           '
           'Button2
@@ -101,6 +86,7 @@ Partial Class frmLogViewer
           Me.Button2.Size = New System.Drawing.Size(110, 23)
           Me.Button2.TabIndex = 1
           Me.Button2.Text = "Multiple Log"
+          Me.ToolTip1.SetToolTip(Me.Button2, "Multiple Fuels Calculator Log Files")
           Me.Button2.UseVisualStyleBackColor = True
           '
           'Button3
@@ -112,6 +98,7 @@ Partial Class frmLogViewer
           Me.Button3.Size = New System.Drawing.Size(112, 23)
           Me.Button3.TabIndex = 2
           Me.Button3.Text = "Error Log"
+          Me.ToolTip1.SetToolTip(Me.Button3, "Error Log")
           Me.Button3.UseVisualStyleBackColor = True
           '
           'Button5
@@ -126,7 +113,28 @@ Partial Class frmLogViewer
           Me.Button5.Size = New System.Drawing.Size(348, 23)
           Me.Button5.TabIndex = 3
           Me.Button5.Text = "CLEAR ALL LOGS"
+          Me.ToolTip1.SetToolTip(Me.Button5, "CLEAR ALL LOG FILES")
           Me.Button5.UseVisualStyleBackColor = False
+          '
+          'Button6
+          '
+          Me.Button6.Image = Global.Smoke_Calculator_v3.My.Resources.Resources.weIMAGE086
+          Me.Button6.Location = New System.Drawing.Point(460, 12)
+          Me.Button6.Name = "Button6"
+          Me.Button6.Size = New System.Drawing.Size(75, 79)
+          Me.Button6.TabIndex = 3
+          Me.ToolTip1.SetToolTip(Me.Button6, "This will export the currently open log to an RTF")
+          Me.Button6.UseVisualStyleBackColor = True
+          '
+          'Button4
+          '
+          Me.Button4.Image = Global.Smoke_Calculator_v3.My.Resources.Resources.p24_00079
+          Me.Button4.Location = New System.Drawing.Point(376, 17)
+          Me.Button4.Name = "Button4"
+          Me.Button4.Size = New System.Drawing.Size(32, 23)
+          Me.Button4.TabIndex = 2
+          Me.ToolTip1.SetToolTip(Me.Button4, "Open the Log Folder")
+          Me.Button4.UseVisualStyleBackColor = True
           '
           'bLogName
           '
@@ -138,6 +146,12 @@ Partial Class frmLogViewer
           Me.bLogName.Size = New System.Drawing.Size(28, 17)
           Me.bLogName.TabIndex = 4
           Me.bLogName.Text = "null"
+          '
+          'ToolTip1
+          '
+          Me.ToolTip1.IsBalloon = True
+          Me.ToolTip1.ShowAlways = True
+          Me.ToolTip1.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info
           '
           'frmLogViewer
           '
@@ -167,4 +181,5 @@ Partial Class frmLogViewer
      Friend WithEvents Button5 As System.Windows.Forms.Button
      Friend WithEvents Button6 As System.Windows.Forms.Button
      Friend WithEvents bLogName As System.Windows.Forms.Label
+     Friend WithEvents ToolTip1 As System.Windows.Forms.ToolTip
 End Class

@@ -73,9 +73,39 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property _1493228() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("1493228", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property _17041() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("17041", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property Calculator_6_icon() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Calculator-6-icon", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property iconfinder_304_mountain_landscape_hill_nature_tree_4179020() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("iconfinder_304_mountain_landscape_hill_nature_tree_4179020", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

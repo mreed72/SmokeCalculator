@@ -9,8 +9,8 @@ Imports System.Runtime.InteropServices
 ' Review the values of the assembly attributes
 
 <Assembly: AssemblyTitle("Smoke Calculator v3")> 
-<Assembly: AssemblyDescription("")> 
-<Assembly: AssemblyCompany("")> 
+<Assembly: AssemblyDescription("Calculator to assist burn managers in determining if their burn will exceed smoke mgmt guidelines.")> 
+<Assembly: AssemblyCompany("Mighty Apps")> 
 <Assembly: AssemblyProduct("Smoke Calculator")> 
 <Assembly: AssemblyCopyright("Copyright ©  2019")> 
 <Assembly: AssemblyTrademark("")> 
@@ -31,5 +31,5 @@ Imports System.Runtime.InteropServices
 ' by using the '*' as shown below:
 ' <Assembly: AssemblyVersion("1.0.*")> 
 
-<Assembly: AssemblyVersion("3.8.1.15")> 
-<Assembly: AssemblyFileVersion("3.8.1.15")> 
+<Assembly: AssemblyVersion("3.8.2.3")> 
+<Assembly: AssemblyFileVersion("3.8.2.3")> 

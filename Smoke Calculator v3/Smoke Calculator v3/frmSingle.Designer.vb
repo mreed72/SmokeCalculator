@@ -49,11 +49,24 @@ Partial Class frmSingle
           Me.btnCalc = New System.Windows.Forms.Button()
           Me.PictureBox1 = New System.Windows.Forms.PictureBox()
           Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-          Me.Label9 = New System.Windows.Forms.Label()
+          Me.ProgressBar1 = New System.Windows.Forms.ProgressBar()
+          Me.bv611 = New System.Windows.Forms.Label()
+          Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
+          Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
+          Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+          Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+          Me.PictureBox4 = New System.Windows.Forms.PictureBox()
+          Me.PictureBox5 = New System.Windows.Forms.PictureBox()
+          Me.PictureBox6 = New System.Windows.Forms.PictureBox()
           Me.TableLayoutPanel1.SuspendLayout()
           Me.TableLayoutPanel2.SuspendLayout()
           Me.TableLayoutPanel3.SuspendLayout()
           CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+          CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+          CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+          CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
+          CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
+          CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
           Me.SuspendLayout()
           '
           'TableLayoutPanel1
@@ -153,7 +166,7 @@ Partial Class frmSingle
           Me.TableLayoutPanel2.RowCount = 2
           Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle())
           Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle())
-          Me.TableLayoutPanel2.Size = New System.Drawing.Size(383, 66)
+          Me.TableLayoutPanel2.Size = New System.Drawing.Size(333, 66)
           Me.TableLayoutPanel2.TabIndex = 1
           '
           'Label4
@@ -297,6 +310,7 @@ Partial Class frmSingle
           Me.btnClear.Name = "btnClear"
           Me.btnClear.Size = New System.Drawing.Size(45, 36)
           Me.btnClear.TabIndex = 3
+          Me.ToolTip1.SetToolTip(Me.btnClear, "Clear the fields and start over")
           Me.btnClear.UseVisualStyleBackColor = False
           '
           'btnCalc
@@ -308,6 +322,7 @@ Partial Class frmSingle
           Me.btnCalc.Name = "btnCalc"
           Me.btnCalc.Size = New System.Drawing.Size(75, 67)
           Me.btnCalc.TabIndex = 2
+          Me.ToolTip1.SetToolTip(Me.btnCalc, "Perform the calculation")
           Me.btnCalc.UseVisualStyleBackColor = False
           '
           'PictureBox1
@@ -323,23 +338,99 @@ Partial Class frmSingle
           'Timer1
           '
           '
-          'Label9
+          'ProgressBar1
           '
-          Me.Label9.AutoSize = True
-          Me.Label9.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-          Me.Label9.ForeColor = System.Drawing.SystemColors.AppWorkspace
-          Me.Label9.Location = New System.Drawing.Point(0, 261)
-          Me.Label9.Name = "Label9"
-          Me.Label9.Size = New System.Drawing.Size(14, 16)
-          Me.Label9.TabIndex = 7
-          Me.Label9.Text = "0"
+          Me.ProgressBar1.Location = New System.Drawing.Point(12, 219)
+          Me.ProgressBar1.Name = "ProgressBar1"
+          Me.ProgressBar1.Size = New System.Drawing.Size(193, 23)
+          Me.ProgressBar1.TabIndex = 7
+          '
+          'bv611
+          '
+          Me.bv611.AutoSize = True
+          Me.bv611.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+          Me.bv611.Location = New System.Drawing.Point(13, 245)
+          Me.bv611.Name = "bv611"
+          Me.bv611.Size = New System.Drawing.Size(0, 16)
+          Me.bv611.TabIndex = 8
+          '
+          'Timer2
+          '
+          '
+          'ToolTip1
+          '
+          Me.ToolTip1.IsBalloon = True
+          Me.ToolTip1.ShowAlways = True
+          Me.ToolTip1.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info
+          Me.ToolTip1.ToolTipTitle = "SINGLE FUELS CALCULATOR"
+          '
+          'PictureBox2
+          '
+          Me.PictureBox2.Image = Global.Smoke_Calculator_v3.My.Resources.Resources._1493228
+          Me.PictureBox2.Location = New System.Drawing.Point(427, 20)
+          Me.PictureBox2.Name = "PictureBox2"
+          Me.PictureBox2.Size = New System.Drawing.Size(16, 16)
+          Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+          Me.PictureBox2.TabIndex = 9
+          Me.PictureBox2.TabStop = False
+          Me.ToolTip1.SetToolTip(Me.PictureBox2, "The size of the burn in Acres (No Decimals)")
+          '
+          'PictureBox3
+          '
+          Me.PictureBox3.Image = Global.Smoke_Calculator_v3.My.Resources.Resources._1493228
+          Me.PictureBox3.Location = New System.Drawing.Point(427, 49)
+          Me.PictureBox3.Name = "PictureBox3"
+          Me.PictureBox3.Size = New System.Drawing.Size(16, 16)
+          Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+          Me.PictureBox3.TabIndex = 10
+          Me.PictureBox3.TabStop = False
+          Me.ToolTip1.SetToolTip(Me.PictureBox3, "The category day (1 - 5)")
+          '
+          'PictureBox4
+          '
+          Me.PictureBox4.Image = Global.Smoke_Calculator_v3.My.Resources.Resources._1493228
+          Me.PictureBox4.Location = New System.Drawing.Point(427, 80)
+          Me.PictureBox4.Name = "PictureBox4"
+          Me.PictureBox4.Size = New System.Drawing.Size(16, 16)
+          Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+          Me.PictureBox4.TabIndex = 11
+          Me.PictureBox4.TabStop = False
+          Me.ToolTip1.SetToolTip(Me.PictureBox4, "Distance to the nearest smoke sensitive target in miles (Decimals Okay)")
+          '
+          'PictureBox5
+          '
+          Me.PictureBox5.Image = Global.Smoke_Calculator_v3.My.Resources.Resources._1493228
+          Me.PictureBox5.Location = New System.Drawing.Point(560, 118)
+          Me.PictureBox5.Name = "PictureBox5"
+          Me.PictureBox5.Size = New System.Drawing.Size(16, 16)
+          Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+          Me.PictureBox5.TabIndex = 12
+          Me.PictureBox5.TabStop = False
+          Me.ToolTip1.SetToolTip(Me.PictureBox5, "The type of fuel that covers the majority of the area of the burn.")
+          '
+          'PictureBox6
+          '
+          Me.PictureBox6.Image = Global.Smoke_Calculator_v3.My.Resources.Resources._1493228
+          Me.PictureBox6.Location = New System.Drawing.Point(560, 150)
+          Me.PictureBox6.Name = "PictureBox6"
+          Me.PictureBox6.Size = New System.Drawing.Size(16, 16)
+          Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+          Me.PictureBox6.TabIndex = 13
+          Me.PictureBox6.TabStop = False
+          Me.ToolTip1.SetToolTip(Me.PictureBox6, "The amount of fuel loading for this burn")
           '
           'frmSingle
           '
           Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
           Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
           Me.ClientSize = New System.Drawing.Size(616, 275)
-          Me.Controls.Add(Me.Label9)
+          Me.Controls.Add(Me.PictureBox6)
+          Me.Controls.Add(Me.PictureBox5)
+          Me.Controls.Add(Me.PictureBox4)
+          Me.Controls.Add(Me.PictureBox3)
+          Me.Controls.Add(Me.PictureBox2)
+          Me.Controls.Add(Me.bv611)
+          Me.Controls.Add(Me.ProgressBar1)
           Me.Controls.Add(Me.btnClear)
           Me.Controls.Add(Me.btnCalc)
           Me.Controls.Add(Me.txRec)
@@ -360,6 +451,11 @@ Partial Class frmSingle
           Me.TableLayoutPanel3.ResumeLayout(False)
           Me.TableLayoutPanel3.PerformLayout()
           CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+          CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+          CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+          CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
+          CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
+          CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
           Me.ResumeLayout(False)
           Me.PerformLayout()
 
@@ -389,5 +485,13 @@ Partial Class frmSingle
      Friend WithEvents btnCalc As System.Windows.Forms.Button
      Friend WithEvents btnClear As System.Windows.Forms.Button
      Friend WithEvents Timer1 As System.Windows.Forms.Timer
-     Friend WithEvents Label9 As System.Windows.Forms.Label
+     Friend WithEvents ProgressBar1 As System.Windows.Forms.ProgressBar
+     Friend WithEvents bv611 As System.Windows.Forms.Label
+     Friend WithEvents Timer2 As System.Windows.Forms.Timer
+     Friend WithEvents ToolTip1 As System.Windows.Forms.ToolTip
+     Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
+     Friend WithEvents PictureBox3 As System.Windows.Forms.PictureBox
+     Friend WithEvents PictureBox4 As System.Windows.Forms.PictureBox
+     Friend WithEvents PictureBox5 As System.Windows.Forms.PictureBox
+     Friend WithEvents PictureBox6 As System.Windows.Forms.PictureBox
 End Class

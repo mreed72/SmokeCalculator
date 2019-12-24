@@ -82,6 +82,12 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmAbout.Designer.vb">
+      <DependentUpon>frmAbout.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAbout.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmLogViewer.Designer.vb">
       <DependentUpon>frmLogViewer.vb</DependentUpon>
     </Compile>
@@ -121,6 +127,9 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmAbout.resx">
+      <DependentUpon>frmAbout.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmLogViewer.resx">
       <DependentUpon>frmLogViewer.vb</DependentUpon>
     </EmbeddedResource>
@@ -153,6 +162,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="hexaloga_dbK_icon.ico" />
+    <None Include="Resources\1493228.png" />
+    <None Include="Resources\17041.png" />
+    <None Include="Resources\iconfinder_304_mountain_landscape_hill_nature_tree_4179020.png" />
     <None Include="Resources\weIMAGE086.png" />
     <None Include="Resources\p16_00426.PNG" />
     <None Include="Resources\p16_00255.PNG" />
