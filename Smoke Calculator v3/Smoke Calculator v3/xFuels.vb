@@ -246,7 +246,36 @@ Public Class xFuels
           End Select
      End Function
 
+     Public Function CheckLogFiles()
+          Dim xLG As String = "C:\Smoke Calculator\"
+          Dim sLG As String = "C:\Smoke Calculator\slog.txt"
+          Dim mLG As String = "C:\Smoke Calculator\mlog.txt"
+          Dim eLG As String = "C:\Smoke Calculator\elog.txt"
+          Dim d1, d2, d3, dx As Boolean
+          dx = My.Computer.FileSystem.DirectoryExists(xlg)
+          d1 = My.Computer.FileSystem.FileExists(sLG)
+          d2 = My.Computer.FileSystem.FileExists(mLG)
+          d3 = My.Computer.FileSystem.FileExists(eLG)
+          If dx = False Then
+               My.Computer.FileSystem.CreateDirectory(xLG)
+          End If
+          If d1 = False Then
+               My.Computer.FileSystem.WriteAllText(sLG, "", False)
+          End If
+          If d2 = False Then
+               My.Computer.FileSystem.WriteAllText(mLG, "", False)
+          End If
+          If d3 = False Then
+               My.Computer.FileSystem.WriteAllText(eLG, "", False)
+          End If
+     End Function
+
+
+
+
      Public Function SessionLog(msg As String)
+          CheckLogFiles()
+
           Dim myfile As String = "C:\Smoke Calculator\slog.txt"
           Dim itxt As New TextBox
           If IO.File.Exists(myfile) Then
@@ -258,6 +287,8 @@ Public Class xFuels
      End Function
 
      Public Function MultiLog(msg As String)
+          CheckLogFiles()
+
           Dim myfile As String = "C:\Smoke Calculator\mlog.txt"
           Dim itxt As New TextBox
           If IO.File.Exists(myfile) Then
@@ -269,6 +300,8 @@ Public Class xFuels
      End Function
 
      Public Function ErrorLog(code As String, msg As String)
+          CheckLogFiles()
+
           Dim myfile As String = "C:\Smoke Calculator\elog.txt"
           Dim itxt As New TextBox
           If IO.File.Exists(myfile) Then
