@@ -2,99 +2,118 @@
 <doc>
 <assembly>
 <name>
-SmokeCalculatorv3
+Smoke Calculator v3
 </name>
 </assembly>
 <members>
+<member name="T:Smoke_Calculator_v3.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
 <member name="P:Smoke_Calculator_v3.My.Resources.Resources.ResourceManager">
-	<summary>
+<summary>
   Returns the cached ResourceManager instance used by this class.
 </summary>
-</member><member name="P:Smoke_Calculator_v3.My.Resources.Resources.Culture">
-	<summary>
+</member>
+<member name="P:Smoke_Calculator_v3.My.Resources.Resources.Culture">
+<summary>
   Overrides the current thread's CurrentUICulture property for all
   resource lookups using this strongly typed resource class.
 </summary>
-</member><member name="P:Smoke_Calculator_v3.My.Resources.Resources._018489">
-	<summary>
+</member>
+<member name="P:Smoke_Calculator_v3.My.Resources.Resources._018489">
+<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
-</member><member name="P:Smoke_Calculator_v3.My.Resources.Resources._1493228">
-	<summary>
+</member>
+<member name="P:Smoke_Calculator_v3.My.Resources.Resources._1493228">
+<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
-</member><member name="P:Smoke_Calculator_v3.My.Resources.Resources._17041">
-	<summary>
+</member>
+<member name="P:Smoke_Calculator_v3.My.Resources.Resources._17041">
+<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
-</member><member name="P:Smoke_Calculator_v3.My.Resources.Resources.Calculator_6_icon">
-	<summary>
+</member>
+<member name="P:Smoke_Calculator_v3.My.Resources.Resources.Calculator_6_icon">
+<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
-</member><member name="P:Smoke_Calculator_v3.My.Resources.Resources.iconfinder_304_mountain_landscape_hill_nature_tree_4179020">
-	<summary>
+</member>
+<member name="P:Smoke_Calculator_v3.My.Resources.Resources.iconfinder_304_mountain_landscape_hill_nature_tree_4179020">
+<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
-</member><member name="P:Smoke_Calculator_v3.My.Resources.Resources.p16_00188">
-	<summary>
+</member>
+<member name="P:Smoke_Calculator_v3.My.Resources.Resources.p16_00188">
+<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
-</member><member name="P:Smoke_Calculator_v3.My.Resources.Resources.p16_00255">
-	<summary>
+</member>
+<member name="P:Smoke_Calculator_v3.My.Resources.Resources.p16_00255">
+<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
-</member><member name="P:Smoke_Calculator_v3.My.Resources.Resources.p16_00426">
-	<summary>
+</member>
+<member name="P:Smoke_Calculator_v3.My.Resources.Resources.p16_00426">
+<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
-</member><member name="P:Smoke_Calculator_v3.My.Resources.Resources.p24_00079">
-	<summary>
+</member>
+<member name="P:Smoke_Calculator_v3.My.Resources.Resources.p24_00079">
+<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
-</member><member name="P:Smoke_Calculator_v3.My.Resources.Resources.p3200015">
-	<summary>
+</member>
+<member name="P:Smoke_Calculator_v3.My.Resources.Resources.p3200015">
+<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
-</member><member name="P:Smoke_Calculator_v3.My.Resources.Resources.ShexLogoA2">
-	<summary>
+</member>
+<member name="P:Smoke_Calculator_v3.My.Resources.Resources.ShexLogoA2">
+<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
-</member><member name="P:Smoke_Calculator_v3.My.Resources.Resources.weIMAGE072">
-	<summary>
+</member>
+<member name="P:Smoke_Calculator_v3.My.Resources.Resources.weIMAGE072">
+<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
-</member><member name="P:Smoke_Calculator_v3.My.Resources.Resources.weIMAGE086">
-	<summary>
+</member>
+<member name="P:Smoke_Calculator_v3.My.Resources.Resources.weIMAGE086">
+<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
-</member><member name="P:Smoke_Calculator_v3.My.Resources.Resources.weIMAGE088">
-	<summary>
+</member>
+<member name="P:Smoke_Calculator_v3.My.Resources.Resources.weIMAGE088">
+<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
-</member><member name="P:Smoke_Calculator_v3.My.Resources.Resources.weIMAGE095">
-	<summary>
+</member>
+<member name="P:Smoke_Calculator_v3.My.Resources.Resources.weIMAGE095">
+<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
-</member><member name="T:Smoke_Calculator_v3.My.Resources.Resources">
-	<summary>
-  A strongly-typed resource class, for looking up localized strings, etc.
-</summary>
-</member><member name="M:Smoke_Calculator_v3.xFuels.smpCalc(System.Int32@,System.Double@)">
-	<summary>
+</member>
+<member name="M:Smoke_Calculator_v3.xFuels.smpCalc(System.Int32@,System.Double@)">
+ <summary>
  Smoke Calculation function
  </summary>
-	<param name="xCatDay">INTEGER Category Day No Decimals must be 1 to 50</param>
-	<param name="xDistance">DOUBLE Target Distance in Miles Decimals okay</param>
-	<returns>INTEGER this number must be compared with the total tons to determine smoke mgmt results.</returns>
-	<remarks>Fixed Issues with error at exactly 20 miles distance.</remarks>
-</member><member name="M:Smoke_Calculator_v3.xFuels.GetAvailableFuels(System.String,System.String)">
-	<summary>
+ <param name="xCatDay">INTEGER Category Day No Decimals must be 1 to 50</param>
+ <param name="xDistance">DOUBLE Target Distance in Miles Decimals okay</param>
+ <returns>INTEGER this number must be compared with the total tons to determine smoke mgmt results.</returns>
+ <remarks>Fixed Issues with error at exactly 20 miles distance.</remarks>
+</member>
+<member name="M:Smoke_Calculator_v3.xFuels.GetAvailableFuels(System.String,System.String)">
+ <summary>
  Determine available fuels
  </summary>
-	<param name="cTypx">STRING this is the fuel type selected by the user</param>
-	<param name="cLoad">STRING this is the fuel loading selected by the user</param>
-	<returns>DOUBLE this value is multiplied by the burn size to determine the total tons for the burn </returns>
-	<remarks></remarks>
+ <param name="cTypx">STRING this is the fuel type selected by the user</param>
+ <param name="cLoad">STRING this is the fuel loading selected by the user</param>
+ <returns>DOUBLE this value is multiplied by the burn size to determine the total tons for the burn </returns>
+ <remarks></remarks>
 </member>
 </members>
 </doc>
