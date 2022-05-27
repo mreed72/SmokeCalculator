@@ -63,9 +63,9 @@ Partial Class Form1
         Me.Label2.ForeColor = System.Drawing.SystemColors.AppWorkspace
         Me.Label2.Location = New System.Drawing.Point(4, 34)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(106, 16)
+        Me.Label2.Size = New System.Drawing.Size(105, 16)
         Me.Label2.TabIndex = 1
-        Me.Label2.Text = "© 2019 Scott Reed"
+        Me.Label2.Text = "© 2022 Scott Reed"
         '
         'lbVersion
         '
@@ -82,7 +82,7 @@ Partial Class Form1
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button1.Image = Global.Smoke_Calculator_v3.My.Resources.Resources.p24_00079
         Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Button1.Location = New System.Drawing.Point(298, 238)
+        Me.Button1.Location = New System.Drawing.Point(298, 301)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(135, 34)
         Me.Button1.TabIndex = 4
@@ -92,7 +92,7 @@ Partial Class Form1
         '
         'btnMultiple
         '
-        Me.btnMultiple.BackColor = System.Drawing.Color.Gray
+        Me.btnMultiple.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.btnMultiple.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnMultiple.Image = Global.Smoke_Calculator_v3.My.Resources.Resources.weIMAGE088
         Me.btnMultiple.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -106,7 +106,7 @@ Partial Class Form1
         '
         'btnSingle
         '
-        Me.btnSingle.BackColor = System.Drawing.Color.Silver
+        Me.btnSingle.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.btnSingle.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnSingle.Image = Global.Smoke_Calculator_v3.My.Resources.Resources.weIMAGE095
         Me.btnSingle.ImageAlign = System.Drawing.ContentAlignment.MiddleRight

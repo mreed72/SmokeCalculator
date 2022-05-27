@@ -8,8 +8,8 @@
      Private Sub frmAbout_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
           Dim xv As String = My.Application.Info.Version.ToString
           bVersion.Text = "v" & xv
-          bCopyright.Text = "© 2019 Scott Reed"
-          bSupport.Text = "mreed1972@gmail.com"
+        bCopyright.Text = "© 2022 Scott Reed"
+        bSupport.Text = "mreed1972@gmail.com"
 
           bQuote.Text = qte()
      End Sub

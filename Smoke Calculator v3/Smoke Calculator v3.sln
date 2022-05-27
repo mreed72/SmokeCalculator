@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31410.357
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32421.90
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Smoke Calculator v3", "Smoke Calculator v3\Smoke Calculator v3.vbproj", "{812E78BE-B657-4ABD-A1BC-27C6B3CE9C53}"
 EndProject
@@ -9,8 +9,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
 	EndProjectSection
-EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup2", "Setup2\Setup2.vdproj", "{2BA09511-38F9-4426-95BB-1883EC1C506E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -22,8 +20,6 @@ Global
 		{812E78BE-B657-4ABD-A1BC-27C6B3CE9C53}.Debug|x86.Build.0 = Debug|x86
 		{812E78BE-B657-4ABD-A1BC-27C6B3CE9C53}.Release|x86.ActiveCfg = Release|x86
 		{812E78BE-B657-4ABD-A1BC-27C6B3CE9C53}.Release|x86.Build.0 = Release|x86
-		{2BA09511-38F9-4426-95BB-1883EC1C506E}.Debug|x86.ActiveCfg = Debug
-		{2BA09511-38F9-4426-95BB-1883EC1C506E}.Release|x86.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
