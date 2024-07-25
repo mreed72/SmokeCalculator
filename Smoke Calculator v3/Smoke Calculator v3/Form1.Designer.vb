@@ -65,7 +65,7 @@ Partial Class Form1
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(105, 16)
         Me.Label2.TabIndex = 1
-        Me.Label2.Text = "© 2022 Scott Reed"
+        Me.Label2.Text = "© 2024 Scott Reed"
         '
         'lbVersion
         '

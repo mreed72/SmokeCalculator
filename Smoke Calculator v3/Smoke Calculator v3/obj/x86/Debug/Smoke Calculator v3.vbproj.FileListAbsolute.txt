@@ -51,7 +51,6 @@ C:\Users\mreed\OneDrive - State of Arkansas\Documents\GitHub\SmokeCalculator\Smo
 C:\Users\mreed\OneDrive - State of Arkansas\Documents\GitHub\SmokeCalculator\Smoke Calculator v3\Smoke Calculator v3\bin\Debug\Smoke Calculator v3.pdb
 C:\Users\mreed\OneDrive - State of Arkansas\Documents\GitHub\SmokeCalculator\Smoke Calculator v3\Smoke Calculator v3\bin\Debug\Smoke Calculator v3.xml
 C:\Users\mreed\OneDrive - State of Arkansas\Documents\GitHub\SmokeCalculator\Smoke Calculator v3\Smoke Calculator v3\obj\x86\Debug\Smoke Calculator v3.vbproj.AssemblyReference.cache
-C:\Users\mreed\OneDrive - State of Arkansas\Documents\GitHub\SmokeCalculator\Smoke Calculator v3\Smoke Calculator v3\obj\x86\Debug\Smoke Calculator v3.vbproj.SuggestedBindingRedirects.cache
 C:\Users\mreed\OneDrive - State of Arkansas\Documents\GitHub\SmokeCalculator\Smoke Calculator v3\Smoke Calculator v3\obj\x86\Debug\Smoke_Calculator_v3.Form1.resources
 C:\Users\mreed\OneDrive - State of Arkansas\Documents\GitHub\SmokeCalculator\Smoke Calculator v3\Smoke Calculator v3\obj\x86\Debug\Smoke_Calculator_v3.frmAbout.resources
 C:\Users\mreed\OneDrive - State of Arkansas\Documents\GitHub\SmokeCalculator\Smoke Calculator v3\Smoke Calculator v3\obj\x86\Debug\Smoke_Calculator_v3.frmLogViewer.resources

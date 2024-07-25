@@ -270,10 +270,7 @@ Public Class xFuels
           End If
      End Function
 
-
-
-
-     Public Function SessionLog(msg As String)
+    Public Function SessionLog(msg As String)
           CheckLogFiles()
 
           Dim myfile As String = "C:\Smoke Calculator\slog.txt"

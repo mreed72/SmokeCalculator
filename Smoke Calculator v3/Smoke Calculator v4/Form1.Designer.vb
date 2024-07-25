@@ -25,19 +25,6 @@ Partial Class Form1
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
-        Me.TabPage2 = New System.Windows.Forms.TabPage()
-        Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.txBurnSize = New System.Windows.Forms.TextBox()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.txCatDay = New System.Windows.Forms.TextBox()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.txDistance = New System.Windows.Forms.TextBox()
-        Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.txFtype = New System.Windows.Forms.ComboBox()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.txFload = New System.Windows.Forms.ComboBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.TableLayoutPanel3 = New System.Windows.Forms.TableLayoutPanel()
         Me.Label6 = New System.Windows.Forms.Label()
@@ -46,21 +33,32 @@ Partial Class Form1
         Me.txAvFuels = New System.Windows.Forms.Label()
         Me.txAllowed = New System.Windows.Forms.Label()
         Me.txTotalTons = New System.Windows.Forms.Label()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.txFtype = New System.Windows.Forms.ComboBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.txFload = New System.Windows.Forms.ComboBox()
+        Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.txBurnSize = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.txCatDay = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.txDistance = New System.Windows.Forms.TextBox()
+        Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
-        Me.TableLayoutPanel1.SuspendLayout()
-        Me.TableLayoutPanel2.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.TableLayoutPanel3.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TableLayoutPanel2.SuspendLayout()
+        Me.TableLayoutPanel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'TabControl1
         '
         Me.TabControl1.Controls.Add(Me.TabPage1)
         Me.TabControl1.Controls.Add(Me.TabPage2)
-        Me.TabControl1.Location = New System.Drawing.Point(79, 12)
+        Me.TabControl1.Location = New System.Drawing.Point(12, 12)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
         Me.TabControl1.Size = New System.Drawing.Size(457, 232)
@@ -78,147 +76,6 @@ Partial Class Form1
         Me.TabPage1.Size = New System.Drawing.Size(449, 206)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Inputs"
-        '
-        'TabPage2
-        '
-        Me.TabPage2.BackColor = System.Drawing.Color.FloralWhite
-        Me.TabPage2.Location = New System.Drawing.Point(4, 22)
-        Me.TabPage2.Name = "TabPage2"
-        Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(449, 206)
-        Me.TabPage2.TabIndex = 1
-        Me.TabPage2.Text = "Results"
-        '
-        'TableLayoutPanel1
-        '
-        Me.TableLayoutPanel1.ColumnCount = 2
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle())
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle())
-        Me.TableLayoutPanel1.Controls.Add(Me.Label1, 0, 0)
-        Me.TableLayoutPanel1.Controls.Add(Me.txBurnSize, 1, 0)
-        Me.TableLayoutPanel1.Controls.Add(Me.Label2, 0, 1)
-        Me.TableLayoutPanel1.Controls.Add(Me.txCatDay, 1, 1)
-        Me.TableLayoutPanel1.Controls.Add(Me.Label3, 0, 2)
-        Me.TableLayoutPanel1.Controls.Add(Me.txDistance, 1, 2)
-        Me.TableLayoutPanel1.Location = New System.Drawing.Point(6, 6)
-        Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
-        Me.TableLayoutPanel1.RowCount = 3
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle())
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle())
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle())
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(99, 79)
-        Me.TableLayoutPanel1.TabIndex = 0
-        '
-        'Label1
-        '
-        Me.Label1.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(3, 6)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(30, 13)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Size:"
-        '
-        'txBurnSize
-        '
-        Me.txBurnSize.Anchor = System.Windows.Forms.AnchorStyles.Left
-        Me.txBurnSize.Location = New System.Drawing.Point(39, 3)
-        Me.txBurnSize.Name = "txBurnSize"
-        Me.txBurnSize.Size = New System.Drawing.Size(47, 20)
-        Me.txBurnSize.TabIndex = 1
-        '
-        'Label2
-        '
-        Me.Label2.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(7, 32)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(26, 13)
-        Me.Label2.TabIndex = 2
-        Me.Label2.Text = "Cat:"
-        '
-        'txCatDay
-        '
-        Me.txCatDay.Anchor = System.Windows.Forms.AnchorStyles.Left
-        Me.txCatDay.Location = New System.Drawing.Point(39, 29)
-        Me.txCatDay.Name = "txCatDay"
-        Me.txCatDay.Size = New System.Drawing.Size(47, 20)
-        Me.txCatDay.TabIndex = 3
-        '
-        'Label3
-        '
-        Me.Label3.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(5, 59)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(28, 13)
-        Me.Label3.TabIndex = 4
-        Me.Label3.Text = "Dist:"
-        '
-        'txDistance
-        '
-        Me.txDistance.Anchor = System.Windows.Forms.AnchorStyles.Left
-        Me.txDistance.Location = New System.Drawing.Point(39, 55)
-        Me.txDistance.Name = "txDistance"
-        Me.txDistance.Size = New System.Drawing.Size(47, 20)
-        Me.txDistance.TabIndex = 5
-        '
-        'TableLayoutPanel2
-        '
-        Me.TableLayoutPanel2.ColumnCount = 2
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.27711!))
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80.72289!))
-        Me.TableLayoutPanel2.Controls.Add(Me.Label4, 0, 0)
-        Me.TableLayoutPanel2.Controls.Add(Me.txFtype, 1, 0)
-        Me.TableLayoutPanel2.Controls.Add(Me.Label5, 0, 1)
-        Me.TableLayoutPanel2.Controls.Add(Me.txFload, 1, 1)
-        Me.TableLayoutPanel2.Location = New System.Drawing.Point(111, 6)
-        Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
-        Me.TableLayoutPanel2.RowCount = 2
-        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel2.Size = New System.Drawing.Size(332, 79)
-        Me.TableLayoutPanel2.TabIndex = 1
-        '
-        'Label4
-        '
-        Me.Label4.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(4, 13)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(57, 13)
-        Me.Label4.TabIndex = 0
-        Me.Label4.Text = "Fuel Type:"
-        '
-        'txFtype
-        '
-        Me.txFtype.Anchor = System.Windows.Forms.AnchorStyles.Left
-        Me.txFtype.FormattingEnabled = True
-        Me.txFtype.Items.AddRange(New Object() {"Shortleaf Pine with Oak", "Shortleaf Pine Regeneration", "Loblolly Pine with Oak", "Loblolly Pine Regeneration", "Hardwood Leaf Litter", "Grass or Brush", "Dispersed Slash", "Piled Debris", "Shortleaf Loblolly with Grass", "Corn", "Cotton", "Rice", "Soybean", "Wheat"})
-        Me.txFtype.Location = New System.Drawing.Point(67, 9)
-        Me.txFtype.Name = "txFtype"
-        Me.txFtype.Size = New System.Drawing.Size(252, 21)
-        Me.txFtype.TabIndex = 1
-        '
-        'Label5
-        '
-        Me.Label5.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(4, 52)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(57, 13)
-        Me.Label5.TabIndex = 2
-        Me.Label5.Text = "Fuel Load:"
-        '
-        'txFload
-        '
-        Me.txFload.Anchor = System.Windows.Forms.AnchorStyles.Left
-        Me.txFload.FormattingEnabled = True
-        Me.txFload.Items.AddRange(New Object() {"Low", "Moderate", "Heavy"})
-        Me.txFload.Location = New System.Drawing.Point(67, 48)
-        Me.txFload.Name = "txFload"
-        Me.txFload.Size = New System.Drawing.Size(94, 21)
-        Me.txFload.TabIndex = 3
         '
         'Panel1
         '
@@ -309,15 +166,146 @@ Partial Class Form1
         Me.txTotalTons.TabIndex = 5
         Me.txTotalTons.Text = "0"
         '
-        'PictureBox1
+        'TableLayoutPanel2
         '
-        Me.PictureBox1.Image = Global.Smoke_Calculator_v4.My.Resources.Resources.OTH111
-        Me.PictureBox1.Location = New System.Drawing.Point(-21, 151)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(126, 119)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 0
-        Me.PictureBox1.TabStop = False
+        Me.TableLayoutPanel2.ColumnCount = 2
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.27711!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80.72289!))
+        Me.TableLayoutPanel2.Controls.Add(Me.Label4, 0, 0)
+        Me.TableLayoutPanel2.Controls.Add(Me.txFtype, 1, 0)
+        Me.TableLayoutPanel2.Controls.Add(Me.Label5, 0, 1)
+        Me.TableLayoutPanel2.Controls.Add(Me.txFload, 1, 1)
+        Me.TableLayoutPanel2.Location = New System.Drawing.Point(111, 6)
+        Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
+        Me.TableLayoutPanel2.RowCount = 2
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel2.Size = New System.Drawing.Size(332, 79)
+        Me.TableLayoutPanel2.TabIndex = 1
+        '
+        'Label4
+        '
+        Me.Label4.Anchor = System.Windows.Forms.AnchorStyles.Right
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(4, 13)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(57, 13)
+        Me.Label4.TabIndex = 0
+        Me.Label4.Text = "Fuel Type:"
+        '
+        'txFtype
+        '
+        Me.txFtype.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.txFtype.FormattingEnabled = True
+        Me.txFtype.Items.AddRange(New Object() {"Shortleaf Pine with Oak", "Shortleaf Pine Regeneration", "Loblolly Pine with Oak", "Loblolly Pine Regeneration", "Hardwood Leaf Litter", "Grass or Brush", "Dispersed Slash", "Piled Debris", "Shortleaf Loblolly with Grass", "Corn", "Cotton", "Rice", "Soybean", "Wheat"})
+        Me.txFtype.Location = New System.Drawing.Point(67, 9)
+        Me.txFtype.Name = "txFtype"
+        Me.txFtype.Size = New System.Drawing.Size(252, 21)
+        Me.txFtype.TabIndex = 1
+        '
+        'Label5
+        '
+        Me.Label5.Anchor = System.Windows.Forms.AnchorStyles.Right
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(4, 52)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(57, 13)
+        Me.Label5.TabIndex = 2
+        Me.Label5.Text = "Fuel Load:"
+        '
+        'txFload
+        '
+        Me.txFload.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.txFload.FormattingEnabled = True
+        Me.txFload.Items.AddRange(New Object() {"Low", "Moderate", "Heavy"})
+        Me.txFload.Location = New System.Drawing.Point(67, 48)
+        Me.txFload.Name = "txFload"
+        Me.txFload.Size = New System.Drawing.Size(94, 21)
+        Me.txFload.TabIndex = 3
+        '
+        'TableLayoutPanel1
+        '
+        Me.TableLayoutPanel1.ColumnCount = 2
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle())
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle())
+        Me.TableLayoutPanel1.Controls.Add(Me.Label1, 0, 0)
+        Me.TableLayoutPanel1.Controls.Add(Me.txBurnSize, 1, 0)
+        Me.TableLayoutPanel1.Controls.Add(Me.Label2, 0, 1)
+        Me.TableLayoutPanel1.Controls.Add(Me.txCatDay, 1, 1)
+        Me.TableLayoutPanel1.Controls.Add(Me.Label3, 0, 2)
+        Me.TableLayoutPanel1.Controls.Add(Me.txDistance, 1, 2)
+        Me.TableLayoutPanel1.Location = New System.Drawing.Point(6, 6)
+        Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
+        Me.TableLayoutPanel1.RowCount = 3
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle())
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle())
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle())
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(99, 79)
+        Me.TableLayoutPanel1.TabIndex = 0
+        '
+        'Label1
+        '
+        Me.Label1.Anchor = System.Windows.Forms.AnchorStyles.Right
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(3, 6)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(30, 13)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "Size:"
+        '
+        'txBurnSize
+        '
+        Me.txBurnSize.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.txBurnSize.Location = New System.Drawing.Point(39, 3)
+        Me.txBurnSize.Name = "txBurnSize"
+        Me.txBurnSize.Size = New System.Drawing.Size(47, 20)
+        Me.txBurnSize.TabIndex = 1
+        '
+        'Label2
+        '
+        Me.Label2.Anchor = System.Windows.Forms.AnchorStyles.Right
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(7, 32)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(26, 13)
+        Me.Label2.TabIndex = 2
+        Me.Label2.Text = "Cat:"
+        '
+        'txCatDay
+        '
+        Me.txCatDay.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.txCatDay.Location = New System.Drawing.Point(39, 29)
+        Me.txCatDay.Name = "txCatDay"
+        Me.txCatDay.Size = New System.Drawing.Size(47, 20)
+        Me.txCatDay.TabIndex = 3
+        '
+        'Label3
+        '
+        Me.Label3.Anchor = System.Windows.Forms.AnchorStyles.Right
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(5, 59)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(28, 13)
+        Me.Label3.TabIndex = 4
+        Me.Label3.Text = "Dist:"
+        '
+        'txDistance
+        '
+        Me.txDistance.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.txDistance.Location = New System.Drawing.Point(39, 55)
+        Me.txDistance.Name = "txDistance"
+        Me.txDistance.Size = New System.Drawing.Size(47, 20)
+        Me.txDistance.TabIndex = 5
+        '
+        'TabPage2
+        '
+        Me.TabPage2.BackColor = System.Drawing.Color.FloralWhite
+        Me.TabPage2.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage2.Name = "TabPage2"
+        Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage2.Size = New System.Drawing.Size(449, 206)
+        Me.TabPage2.TabIndex = 1
+        Me.TabPage2.Text = "Results"
         '
         'Form1
         '
@@ -325,25 +313,21 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(542, 258)
         Me.Controls.Add(Me.TabControl1)
-        Me.Controls.Add(Me.PictureBox1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form1"
         Me.Text = "Single Fuels Calculator"
         Me.TabControl1.ResumeLayout(False)
         Me.TabPage1.ResumeLayout(False)
-        Me.TableLayoutPanel1.ResumeLayout(False)
-        Me.TableLayoutPanel1.PerformLayout()
-        Me.TableLayoutPanel2.ResumeLayout(False)
-        Me.TableLayoutPanel2.PerformLayout()
         Me.Panel1.ResumeLayout(False)
         Me.TableLayoutPanel3.ResumeLayout(False)
         Me.TableLayoutPanel3.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.TableLayoutPanel2.ResumeLayout(False)
+        Me.TableLayoutPanel2.PerformLayout()
+        Me.TableLayoutPanel1.ResumeLayout(False)
+        Me.TableLayoutPanel1.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
-
-    Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents TabControl1 As TabControl
     Friend WithEvents TabPage1 As TabPage
     Friend WithEvents Panel1 As Panel

@@ -11,8 +11,8 @@ Imports System.Runtime.InteropServices
 <Assembly: AssemblyTitle("Smoke Calculator v3")> 
 <Assembly: AssemblyDescription("Calculator to assist burn managers in determining if their burn will exceed smoke mgmt guidelines.")> 
 <Assembly: AssemblyCompany("Mighty Apps")> 
-<Assembly: AssemblyProduct("Smoke Calculator")> 
-<Assembly: AssemblyCopyright("Copyright ©  2019")> 
+<Assembly: AssemblyProduct("Smoke Calculator")>
+<Assembly: AssemblyCopyright("Copyright ©  2024")>
 <Assembly: AssemblyTrademark("")> 
 
 <Assembly: ComVisible(False)>
@@ -31,5 +31,5 @@ Imports System.Runtime.InteropServices
 ' by using the '*' as shown below:
 ' <Assembly: AssemblyVersion("1.0.*")> 
 
-<Assembly: AssemblyVersion("3.8.5.2")>
-<Assembly: AssemblyFileVersion("3.8.5.2")>
+<Assembly: AssemblyVersion("3.9.1.1")>
+<Assembly: AssemblyFileVersion("3.9.1.1")>

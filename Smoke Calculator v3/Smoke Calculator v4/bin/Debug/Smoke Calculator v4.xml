@@ -22,15 +22,5 @@ Smoke Calculator v4
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
-<member name="P:Smoke_Calculator_v4.My.Resources.Resources.OTH111">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
-<member name="P:Smoke_Calculator_v4.My.Resources.Resources.OTH233">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
 </members>
 </doc>
